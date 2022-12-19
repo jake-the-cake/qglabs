@@ -1,0 +1,21 @@
+:root {
+  --dark: #373737;
+  --light: #dadada;
+  --green: hsl(150 50% 50% / 1);
+  --yellow: hsl(90 50% 50% / 1);
+  --pink: hsl(330 50% 50% / 1);
+  --blue: hsl(270 50% 50% / 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+.green { background-color: var(--green); width: 50px; aspect-ratio: 1;}
+.yellow { background-color: var(--yellow); width: 50px; aspect-ratio: 1;}
+.pink { background-color: var(--pink); width: 50px; aspect-ratio: 1;}
+.blue { background-color: var(--blue); width: 50px; aspect-ratio: 1;}

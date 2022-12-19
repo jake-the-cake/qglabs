@@ -7,9 +7,9 @@ const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 const data_1 = require("./data");
-dotenv_1.default.config();
 // init app
 const app = (0, express_1.default)();
+dotenv_1.default.config();
 // global variable
 const port = 4200;
 // middleware
@@ -20,7 +20,7 @@ app.use(express_1.default.json());
 app.get('/', (req, res) => {
     res.send('home');
 });
-//start server
+//start server and database
 app.listen(port, () => {
     console.log(`QGLabs server running on port ${port}.`);
     (0, data_1.dataConnection)(process.env.DATABASE)

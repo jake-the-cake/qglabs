@@ -3,9 +3,9 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import { dataConnection } from './data'
 
-dotenv.config()
 // init app
 const app = express()
+dotenv.config()
 
 // global variable
 const port = 4200
@@ -20,7 +20,7 @@ app.get( '/', ( req, res ) => {
   res.send( 'home' )
 })
 
-//start server
+//start server and database
 app.listen(
   port,
   () => {
